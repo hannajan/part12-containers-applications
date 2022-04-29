@@ -1,0 +1,19 @@
+Script started on Fri Apr 29 09:47:06 2022
+Restored session: Pe 29 Huh 2022 09:46:54 EEST
+/Users/hannajantunen/.tmc-autocomplete.sh:44: command not found: complete
+/Users/hannajantunen/.tmc-autocomplete.sh:44: command not found: complete
+[1m[7m%[27m[1m[0m                                                                                                               ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004hdded docker container ls -a[?2004l
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                          PORTS     NAMES
+c476c37622f3   ubuntu        "bash"     21 minutes ago   Exited (0) About a minute ago             gallant_ellis
+15b149f221f2   hello-world   "/hello"   31 minutes ago   Exited (0) 31 minutes ago                 friendly_faraday
+[1m[7m%[27m[1m[0m                                                                                                               ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004hddocker start -i gallant_ellis[?2004l
+[?2004h]0;root@c476c37622f3: /root@c476c37622f3:/# [K]0;root@c476c37622f3: /root@c476c37622f3:/# a nano usr/src/app/index.js 
+[?2004l[?2004h[?1049h[22;0;0t[1;35r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[33;49H(B[0;7m[ Reading... ](B[m[33;48H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 6.2 [33busr/src/app/index.js [41b [1;110H(B[m[34d(B[0;7m^G(B[m Help[34;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[34;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[35d(B[0;7m^X(B[m Exit[35;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[2d[?12l[?25h[?25l[1;70H(B[0;7m*[110G(B[m[?12l[?25h[2dc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hg[?25l[?12l[?25h([?25l[?12l[?25h'[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25hH[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[33d[K[?12l[?25h[2;18Ho[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h W[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hl[?25l[?12l[?25hd[?25l[?12l[?25h[2;13H(B[0;1m[35m'Hello World'[39m(B[m[?25l[?12l[?25h)[?25l[3d[?12l[?25h[?25l[33d(B[0;7mSave modified buffer? [88b [34;1H Y(B[m Yes[K[35d(B[0;7m N(B[m No  [35;16H (B[0;7m^C(B[m Cancel[K[33;23H[?12l[?25h[?25l[34d(B[0;7m^G(B[m Help[34;28H(B[0;7mM-D(B[m DOS Format[34;55H(B[0;7mM-A(B[m Append[34;82H(B[0;7mM-B(B[m Backup File[35d(B[0;7m^C(B[m Cancel[17G [10b(B[0;7mM-M(B[m Mac Format[35;55H(B[0;7mM-P(B[m Prepend[35;82H(B[0;7m^T(B[m Browse[33d(B[0;7mFile Name to Write: usr/src/app/index.js(B[m[?12l[?25h[?25l[48G[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [110G(B[m[33;48H(B[0;7m[ Wrote 2 lines ](B[m[J[35d[?12l[?25h[35;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@c476c37622f3: /root@c476c37622f3:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                               ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Fri Apr 29 09:48:39 2022

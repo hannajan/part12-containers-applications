@@ -6,8 +6,6 @@ const configs = require('../util/config')
 
 let visits = 0
 
-redis.setAsync('todos', 0)
-
 /* GET index data. */
 router.get('/', async (req, res) => {
   visits++
@@ -19,7 +17,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/statistics', async (req, res) => {
-  const todoCount = await redis.getAsync('todos')
+  const todoCount = await redis.getAsync('todos') || 0
   const data = {
     added_todos: Number(todoCount),
   }

@@ -1,10 +1,12 @@
 const express = require('express');
 const redis = require('../redis')
 const router = express.Router();
-
+const { Todo } = require('../mongo')
 const configs = require('../util/config')
 
 let visits = 0
+
+redis.setAsync('todos', 0)
 
 /* GET index data. */
 router.get('/', async (req, res) => {
@@ -15,5 +17,14 @@ router.get('/', async (req, res) => {
     visits
   });
 });
+
+router.get('/statistics', async (req, res) => {
+  const todoCount = await redis.getAsync('todos')
+  const data = {
+    added_todos: Number(todoCount),
+  }
+
+  res.send(data)
+})
 
 module.exports = router;

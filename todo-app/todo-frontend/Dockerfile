@@ -1,8 +1,18 @@
-FROM node:16 AS build-stage
+FROM node:16 AS test-stage
 
-WORKDIR /urs/src/app
+WORKDIR /usr/src/app
 
 COPY . .
+
+RUN npm ci
+
+RUN CI=TRUE npm test
+
+FROM node:16 AS build-stage
+
+WORKDIR /usr/src/app
+
+COPY --from=test-stage /usr/src/app/ /usr/src/app/
 
 RUN npm ci
 
@@ -12,4 +22,4 @@ RUN npm run build
 
 FROM nginx:1.20-alpine
 
-COPY --from=build-stage /urs/src/app/build /usr/share/nginx/html
+COPY --from=build-stage /usr/src/app/build /usr/share/nginx/html

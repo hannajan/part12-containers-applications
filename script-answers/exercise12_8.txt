@@ -1,0 +1,76 @@
+Script started on Fri Apr 29 16:01:51 2022
+Restored session: Pe 29 Huh 2022 09:55:14 EEST
+/Users/hannajantunen/.tmc-autocomplete.sh:44: command not found: complete
+/Users/hannajantunen/.tmc-autocomplete.sh:44: command not found: complete
+[1m[7m%[27m[1m[0m                                                                                                                                          ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004hddocker container ls[?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                     NAMES
+ea73afc6ce7d   mongo     "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                                                                                          ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004hddocker exec -it todo-backend-mongo-1[?2004l
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+[1m[7m%[27m[1m[0m                                                                                                                                          ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004hdocker exec -it todo-backend-mongo-1 bash[?2004l
+]0;root@ea73afc6ce7d: /root@ea73afc6ce7d:/# [K]0;root@ea73afc6ce7d: /root@ea73afc6ce7d:/# mongo -u root -p example
+MongoDB shell version v5.0.8
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("bd1ac09d-5fb4-4f08-9bcc-872f34b96be3") }
+MongoDB server version: 5.0.8
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_db[3G[Juse the_d[12Gatabase[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db.todos.find({})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("626bd66508ce5b441bde46e1"), "text" : "Learn about containers", "done" : true }
+{ "_id" : ObjectId("626bd66508ce5b441bde46e2"), "text" : "Learn about containers", "done" : true }
+> db.todos.insertOne()[3G[Jdb.todos.insertOne[1;34m([0m)[22G[3G[Jdb.todos.insertOne([1;34m{[0m)[23G[3G[Jdb.todos.insertOne[1;34m([0m{})[24G[3G[Jdb.todos.insertOne([1;34m{[0m})[23G[3G[Jdb.todos.insertOne([1;34m{[0m })[24G[3G[Jdb.todos.insertOne([1;34m{[0m t})[25G[3G[Jdb.todos.insertOne([1;34m{[0m te})[26G[3G[Jdb.todos.insertOne([1;34m{[0m tex})[27G[3G[Jdb.todos.insertOne([1;34m{[0m text})[28G[3G[Jdb.todos.insertOne([1;34m{[0m text:})[29G[3G[Jdb.todos.insertOne([1;34m{[0m text: })[30G[3G[Jdb.todos.insertOne([1;34m{[0m text: "})[31G[3G[Jdb.todos.insertOne([1;34m{[0m text: "I})[32G[3G[Jdb.todos.insertOne([1;34m{[0m text: "In})[33G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Inc})[34G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Incr})[35G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Incre})[36G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increa})[37G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increas})[38G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase})[39G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase })[40G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase t})[41G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase th})[42G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the})[43G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the })[44G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the n})[45G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the nu})[46G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the num})[47G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the numb})[48G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the numbe})[49G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number})[50G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number })[51G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number o})[52G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of})[53G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of })[54G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of t})[55G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of to})[56G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of too})[57G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tool})[58G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools})[59G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools })[60G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools i})[61G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in})[62G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in })[63G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in m})[64G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my})[65G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my })[66G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my t})[67G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my to})[68G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my too})[69G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my tool})[70G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolb})[71G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbe})[72G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbel})[73G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt})[74G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt"})[75G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt",})[76G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", })[77G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", d})[78G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", do})[79G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", don})[80G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done})[81G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done:})[82G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: })[83G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: f})[84G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: fa})[85G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: fal})[86G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: fals})[87G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: false})[88G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: false })[89G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt", done: false })[91G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("626be28e4165ee27d85a2087")
+}
+> db.todos.find({})[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("626bd66508ce5b441bde46e1"), "text" : "Learn about containers", "done" : true }
+{ "_id" : ObjectId("626bd66508ce5b441bde46e2"), "text" : "Learn about containers", "done" : true }
+{ "_id" : ObjectId("626be28e4165ee27d85a2087"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
+> exit[3G[Jexit[7G
+bye
+]0;root@ea73afc6ce7d: /root@ea73afc6ce7d:/# exit
+exit
+[1m[7m%[27m[1m[0m                                                                                                                                          ]7;file://Hanna-MacBook-Air-2.local/Users/hannajantunen[0m[27m[24m[J(base) hannajantunen@Hanna-MacBook-Air-2 ~ % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Fri Apr 29 16:05:54 2022

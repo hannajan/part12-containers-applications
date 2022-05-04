@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  server:
+    image: myapp-backend
+    build:
+      context: ./backend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./backend/:/usr/src/app
+    ports:
+      - 4000:4000
+    env_file:
+      - ./backend/.env
+
+  app:
+    image: myapp-frontend
+    build:
+      context: ./frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./frontend/:/usr/src/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - server

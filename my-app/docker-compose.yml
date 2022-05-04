@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  server:
+    image: myapp-backend-prod
+    build: ./backend
+    volumes:
+      - ./backend/:/usr/src/app
+    ports:
+      - 4000:4000
+    env_file:
+      - ./backend/.env
+
+  app:
+    image: myapp-frontend-prod
+    build: ./frontend
+    volumes:
+     - ./frontend/:/usr/src/app
+    ports: 
+      - 3000:3000
